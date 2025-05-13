@@ -1,0 +1,57 @@
+### Jekyll ###
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+Gemfile.lock
+.bundle/
+
+### Ruby ###
+*.gem
+.ruby-version
+.rbenv-vars
+vendor/
+
+### Node.js ### (если используете npm/yarn)
+node_modules/
+package-lock.json
+yarn.lock
+assets/js/dist/
+assets/css/dist/
+
+### IDE ###
+.idea/
+.vscode/
+*.swp
+*.swo
+*.code-workspace
+
+### ОС ###
+.DS_Store
+Thumbs.db
+Desktop.ini
+._*
+[Tt]humbs.db
+
+### Локальные настройки ###
+.env
+.env.local
+*.local
+
+### Временные файлы ###
+*.tmp
+*.log
+*.bak
+*.cache
+*~
+
+### Изображения ###
+!assets/images/  # сохраняем папку, но можно игнорировать исходники
+assets/images/source/  # пример: исходники для препроцессинга
+*.psd
+*.ai
+
+### Документы ###
+*.pdf
+*.docx
+*.pptx

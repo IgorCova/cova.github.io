@@ -1,0 +1,38 @@
+# Базовые файлы ОС
+.DS_Store
+Thumbs.db
+
+# Файлы редактора/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jekyll-специфичные файлы
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Зависимости
+vendor/
+.bundle/
+node_modules/
+
+# Ruby-окружение
+.ruby-version
+.rbenv-vars
+
+# Локальные конфигурации
+.env
+.env.local
+
+# Временные файлы
+*.tmp
+*.bak
+
+# Файлы сборки
+Gemfile.lock
+*.gem
+
+# И

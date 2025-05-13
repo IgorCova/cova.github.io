@@ -1,0 +1,19 @@
+title: Мое резюме
+description: Резюме для GitHub Pages
+language: "rn"  # Язык по умолчанию
+languages: ["ru", "en"]
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "default"
+
+baseurl: ""
+url: ""
+github_username:  IgorCova
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed

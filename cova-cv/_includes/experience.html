@@ -1,0 +1,10 @@
+<section class="experience">
+    <h2>{{ site.data.[page.lang].common.experience }}</h2>
+    {% for item in site.data.[page.lang].experience %}
+    <div class="job">
+        <h3>{{ item.company }}</h3>
+        <p><strong>{{ item.position }}</strong> | {{ item.dates }} ({{ item.duration }})</p>
+        <p>{{ item.description }}</p>
+    </div>
+    {% endfor %}
+</section>

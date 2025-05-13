@@ -1,0 +1,11 @@
+<section class="education">
+    <h2>{{ site.data.[page.lang].common.education }}</h2>
+    <div class ="edu">
+        {% for item in site.data.[page.lang].educations %}
+            <p>{{ item.name }}</p>
+            <p>{{ item.date }}</p>
+            <p>{{ item.description }}</p>
+            <p>{{ item.location }}</p>
+        {% endfor %}
+    </div>
+</section>
