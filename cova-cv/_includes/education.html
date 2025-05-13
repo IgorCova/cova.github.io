@@ -1,11 +1,18 @@
-<section class="education">
-    <h2>{{ site.data.[page.lang].common.education }}</h2>
-    <div class ="edu">
+<section class="education-section">
+    <h2>{{ site.data[page.lang].common.education }}</h2>
+
+    <div class="education-timeline">
         {% for item in site.data.[page.lang].educations %}
-            <p>{{ item.name }}</p>
-            <p>{{ item.date }}</p>
-            <p>{{ item.description }}</p>
-            <p>{{ item.location }}</p>
+        <div class="education-item {{ item.type }}">
+            <div class="education-header">
+                <h3 class="education-name">{{ item.name }}</h3>
+                <span class="education-date">{{ item.date }}</span>
+            </div>
+            <div class="education-details">
+                <p class="education-description">{{ item.description }}</p>
+                <p class="education-location">📍 {{ item.location }}</p>
+            </div>
+        </div>
         {% endfor %}
     </div>
 </section>

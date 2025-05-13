@@ -1,10 +1,20 @@
 <section class="experience">
     <h2>{{ site.data.[page.lang].common.experience }}</h2>
     {% for item in site.data.[page.lang].experience %}
-    <div class="job">
-        <h3>{{ item.company }}</h3>
-        <p><strong>{{ item.position }}</strong> | {{ item.dates }} ({{ item.duration }})</p>
-        <p>{{ item.description }}</p>
+    <div class="experience-item">
+        <h3 class="position-title">{{ item.position }}</h3>
+        <p class="company-period">{{ item.company }} • {{ item.dates }}</p>
+
+        <div class="experience-description">
+            {% for project in item.projects %}
+            <div class="project">
+                <h4 class="project-title">{{ project.name }}</h4>
+                <div class="project-details">
+                    {{ project.description | markdownify }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
     {% endfor %}
 </section>

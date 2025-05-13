@@ -1,10 +1,125 @@
-- company: "sravni.ru"
-  position: "Backend Tech-Lead / Senior Software Engineer"
-  dates: "September 2022 - Present"
-  duration: "2 years 9 months"
-  description: "Описание обязанностей и достижений."
-- company: "vk.com"
+- company: "Sravni.ru"
+  position: "Tech Lead / Senior Software Engineer"
+  dates: "2020 - Present"
+  projects:
+    - name: "Project: Bank Deposits Platform"
+      description: |
+        Completely redesigned the full-deal system architecture, migrating it from PHP to .NET, which improved stability and scalability.
+
+        **Key Achievements:**
+        - Designed the end-to-end deal process
+        - Migrated data from MongoDB to PostgreSQL        
+        - Implemented SAGA patterns (Kafka choreography for deposit auto-renewal)
+        - Bank integrations
+        - Kafka implementation for event-driven architecture
+        - Monitoring setup: Prometheus, Jaeger, Kibana
+        - Load testing with k6
+        - Reliable hybrid cache manager with Circuit Breaker
+
+    - name: "Project: CASCO (Auto Insurance)"
+      description: |
+        **Developed end-to-end insurance service from scratch:**
+        - Integration with insurance companies
+        - Data processing optimization
+        - Error monitoring system implementation
+        
+        **Tech Stack:**
+        - C# .NET Core microservices
+        - PostgreSQL and ClickHouse databases
+        - RabbitMQ and Kafka message brokers
+        - XUnit for unit testing
+        - Entity Framework
+        - Redis for in-memory caching
+        - ArgoCD for Kubernetes CI/CD
+        - Grafana monitoring and alerting
+        - Prometheus metrics
+        - OpenSearch/Kibana logging
+        - Jaeger request tracing
+
+- company: "VK (VKontakte)"
   position: "Senior Software Engineer"
   dates: "June 2020 - August 2022"
-  duration: "2 years 3 months"
-  description: "Описание обязанностей и достижений."
+  projects:
+    - name: "Project: loyalty.rkeeper.ru"
+      description: |
+        Developed reporting system based on r-keeper and DeliveryClub data.
+        Built microservices for data collection, processing, enrichment, aggregation and reporting.
+
+        **Key Achievements:**
+        - Led development of integration test framework for web services
+        - Led development of notification microservices using SAGA choreography
+        
+        **Tech Stack:**
+        - C# .NET Core microservices
+        - MS SQL Server, PostgreSQL and ClickHouse databases
+        - RabbitMQ message broker
+        - GraphQL APIs
+        - NUnit and XUnit for unit testing
+        - Entity Framework
+        - Redis for in-memory caching
+        - TeamCity and Octopus for CI/CD
+        - Rancher for Kubernetes cluster management
+        - Grafana with Graylog for data visualization and monitoring
+
+- company: "Latoken"
+  position: "Lead Developer"
+  dates: "June 2019 - April 2020"
+  projects:
+    - name: "Project: Crypto Integration"
+      description: |
+        Developed web services for cryptocurrency exchange. Integrated various blockchains like ETH and BTC into exchange infrastructure.
+
+        **Key Achievements:**
+        - Spearheaded development of unified platform for blockchain integration (ETH, BTC etc.), reducing integration time by 10x while minimizing codebase and errors.
+        
+        **Tech Stack:**
+        - C# .NET Core and Node.JS (TypeScript) microservices
+        - PostgreSQL and ClickHouse databases
+        - Kafka message broker
+        - gRPC APIs
+        - TeamCity CI/CD
+        - Rancher for Kubernetes management
+        - ELK Stack with Grafana for data visualization
+
+- company: "RFI BANK"
+  position: "Lead Developer"
+  dates: "February 2017 - June 2019"
+  projects:
+    - name: "Project: Payment Processing"
+      description: |
+        Developed and maintained payment processing center. Managed projects using MasterCard and Mir payment systems.
+
+        **Key Achievements:**
+        - Developed OpenAPI for banking processing integration
+        - Configured GitLab CI/CD for K8s with health/liveness checks
+        - Created Docker images for .NET Core APIs
+        
+        **Tech Stack:**
+        - C# .NET Core microservices
+        - C-based payment processing
+        - Kafka message broker
+        - GitLab CI/CD and TeamCity
+        - Oracle PL/SQL and PostgreSQL databases
+
+- company: "Major-Auto"
+  position: "Software Developer"
+  dates: "June 2013 - January 2017"
+  projects:
+    - name: "Project: Major-Auto CRM"
+      description: |
+        Developed internal corporate information system. Started as intern, grew to mid-level developer.
+
+        **SQL Server & T-SQL Development:**
+        - Created and optimized stored procedures, triggers and functions
+        - Database design (tables, views, keys, indexes) and normalization
+        - Query execution plan analysis and optimization
+        - SQL Server CLR integration, CLR objects implementation
+        
+        **C# and WCF Development:**
+        - Developed WCF service for internal system with external API integration
+        - Extended functionality by adding new classes and methods
+        
+        **Delphi and MS SQL Development:**
+        - Maintained and enhanced corporate information system
+        - Developed business modules and user forms
+        - Created database objects for data management
