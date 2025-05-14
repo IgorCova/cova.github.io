@@ -1,5 +1,7 @@
 <section class="about">
-    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" alt="My Photo" width="200px" class="profile-photo">
+    <div class="profile-photo">
+        <img src="{{ '/assets/images/photo.jpg' | relative_url }}"  width="200px" alt="Фото {{ site.author.name }}" loading="lazy">
+    </div>
     <h3>{{ site.data[page.lang].common.name }}</h3>
     <p>{{ site.data[page.lang].common.work_schedule }} | {{ site.data[page.lang].common.employment_type }}</p>
     <!-- Контакты -->

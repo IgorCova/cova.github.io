@@ -10,6 +10,7 @@ title: Cova's CV
         {% include skills.html %}
     </aside>
     <main class="resume-content">
+        {% include about-me.html %}
         {% include experience.html %}
         {% include education.html %}
     </main>
