@@ -39,3 +39,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Обновление флаера Stack Exchange при смене темы
+function updateStackExchangeFlair() {
+    const flairImg = document.getElementById('stackexchange-flair-img');
+    if (flairImg) {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const theme = isDark ? 'dark' : 'clean';
+        flairImg.src = `https://stackexchange.com/users/flair/3869562.png?theme=${theme}`;
+    }
+}
+
+// Обновление флаера Stack Exchange при смене темы
+function updateCodeWarsFlair() {
+    const flairImg = document.getElementById('codewars-flair-img');
+    if (flairImg) {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const theme = isDark ? 'dark' : 'light';
+        flairImg.src = `https://www.codewars.com/users/IgorCova/badges/large?theme=${theme}`;
+    }
+}
+
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    updateStackExchangeFlair();
+
+    // Обновляем при смене темы
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            setTimeout(updateStackExchangeFlair, 30); // Ждем завершения анимации темы
+        });
+    }
+});
+
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    updateStackExchangeFlair();
+
+    // Обновляем при смене темы
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            setTimeout(updateCodeWarsFlair, 30);
+        });
+    }
+});

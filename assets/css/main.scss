@@ -830,3 +830,46 @@ body {
     transform: rotate(1.5deg) scale(1.03);
   }
 }
+
+.stackexchange-flair {
+  margin: 1.5rem 0;
+  text-align: left;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  [data-theme="dark"] & img {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+.codewars-flair {
+  margin: 1.5rem 0;
+  text-align: left;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  [data-theme="dark"] & img {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+}
