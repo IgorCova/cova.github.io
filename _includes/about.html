@@ -1,6 +1,8 @@
 <section class="about">
-    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" alt="My Photo" width="200px">
+    <img src="{{ '/assets/images/photo.jpg' | relative_url }}" alt="My Photo" width="200px" class="profile-photo">
     <h3>{{ site.data[page.lang].common.name }}</h3>
     <p>{{ site.data[page.lang].common.work_schedule }} | {{ site.data[page.lang].common.employment_type }}</p>
+    <!-- Контакты -->
+    {% include contacts.html %}
     <p>🇺🇸 English - B2</p>
 </section>

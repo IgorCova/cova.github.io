@@ -69,6 +69,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+  height: 45px;
   margin: 0 auto;
 }
 
@@ -82,7 +83,7 @@ body {
 
   .job-title {
     margin: 0.2rem 0 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--text-secondary);
   }
 }
@@ -145,7 +146,6 @@ body {
   .header-content {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
   }
 
   .header-controls {
@@ -545,7 +545,7 @@ body {
   }
 
   .header-controls {
-    padding: 0.5rem 1rem;
+    padding: -1rem 1rem;
     gap: 1rem;
   }
 }
