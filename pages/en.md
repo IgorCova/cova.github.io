@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: en
-permalink: /en/ 
+permalink: /en
 title: Cova's CV
 ---
 <div class="resume-container">

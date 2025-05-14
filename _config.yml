@@ -9,7 +9,7 @@ defaults:
     values:
       layout: "default"
 
-baseurl: ""
+baseurl: "/cova.github.io/"
 url: "https://igorcova.github.io/cova.github.io/"
 github_username:  IgorCova
 
