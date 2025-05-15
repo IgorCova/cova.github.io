@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Обновление флаера Stack Exchange при смене темы
 function updateStackExchangeFlair() {
-    const flairImg = document.getElementById('stackexchange-flair-img');
+    const flairImg = document.getElementById('stackoverflow-flair-flair-img');
     if (flairImg) {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
         const theme = isDark ? 'dark' : 'clean';
-        flairImg.src = `https://stackexchange.com/users/flair/3869562.png?theme=${theme}`;
+        flairImg.src = `https://stackoverflow.com/users/flair/5136955.png?theme=${theme}`;
     }
 }
 
