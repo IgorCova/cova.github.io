@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Обновление флаера Stack Exchange при смене темы
+// Обновление флаера Stack Overflow при смене темы
 function updateStackExchangeFlair() {
     const flairImg = document.getElementById('stackoverflow-flair-img');
     if (flairImg) {
@@ -50,7 +50,7 @@ function updateStackExchangeFlair() {
     }
 }
 
-// Обновление флаера Stack Exchange при смене темы
+// Обновление флаера CodeWars при смене темы
 function updateCodeWarsFlair() {
     const flairImg = document.getElementById('codewars-flair-img');
     if (flairImg) {
