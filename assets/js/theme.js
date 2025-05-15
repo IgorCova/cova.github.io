@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Обновление флаера Stack Exchange при смене темы
 function updateStackExchangeFlair() {
-    const flairImg = document.getElementById('stackoverflow-flair-flair-img');
+    const flairImg = document.getElementById('stackoverflow-flair-img');
     if (flairImg) {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
         const theme = isDark ? 'dark' : 'clean';
