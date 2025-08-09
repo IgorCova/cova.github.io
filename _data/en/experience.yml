@@ -1,6 +1,6 @@
 - company: "Sravni.ru"
   position: "Tech Lead / Senior Software Engineer"
-  dates: "2020 - Present"
+  dates: "August 2022 - Present"
   projects:
     - name: "Project: Bank Deposits Platform"
       description: |
@@ -8,7 +8,7 @@
 
         **Key Achievements:**
         - Designed the end-to-end deal process
-        - Migrated data from MongoDB to PostgreSQL        
+        - Migrated data from MongoDB to PostgreSQL
         - Implemented SAGA patterns (Kafka choreography for deposit auto-renewal)
         - Bank integrations
         - Kafka implementation for event-driven architecture
@@ -22,7 +22,7 @@
         - Integration with insurance companies
         - Data processing optimization
         - Error monitoring system implementation
-        
+
         **Tech Stack:**
         - C# .NET Core microservices
         - PostgreSQL and ClickHouse databases
@@ -48,7 +48,7 @@
         **Key Achievements:**
         - Led development of integration test framework for web services
         - Led development of notification microservices using SAGA choreography
-        
+
         **Tech Stack:**
         - C# .NET Core microservices
         - MS SQL Server, PostgreSQL and ClickHouse databases
@@ -71,7 +71,7 @@
 
         **Key Achievements:**
         - Spearheaded development of unified platform for blockchain integration (ETH, BTC etc.), reducing integration time by 10x while minimizing codebase and errors.
-        
+
         **Tech Stack:**
         - C# .NET Core and Node.JS (TypeScript) microservices
         - PostgreSQL and ClickHouse databases
@@ -93,7 +93,7 @@
         - Developed OpenAPI for banking processing integration
         - Configured GitLab CI/CD for K8s with health/liveness checks
         - Created Docker images for .NET Core APIs
-        
+
         **Tech Stack:**
         - C# .NET Core microservices
         - C-based payment processing
@@ -114,11 +114,11 @@
         - Database design (tables, views, keys, indexes) and normalization
         - Query execution plan analysis and optimization
         - SQL Server CLR integration, CLR objects implementation
-        
+
         **C# and WCF Development:**
         - Developed WCF service for internal system with external API integration
         - Extended functionality by adding new classes and methods
-        
+
         **Delphi and MS SQL Development:**
         - Maintained and enhanced corporate information system
         - Developed business modules and user forms
