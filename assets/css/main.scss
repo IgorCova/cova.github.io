@@ -873,3 +873,25 @@ body {
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
   }
 }
+
+.download-pdf {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--button-bg);
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.download-pdf:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.download-pdf svg {
+  width: 16px;
+  height: 16px;
+}
