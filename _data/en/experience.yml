@@ -4,17 +4,27 @@
   projects:
     - name: "Project: Bank Deposits Platform"
       description: |
-        Completely redesigned the full-deal system architecture, migrating it from PHP to .NET, which improved stability and scalability.
+        Completely redesigned the full-deal system architecture, migrating it from PHP to .NET, which improved stability and scalability. Tech lead of a 10-person cross-functional team (4 backend, 3 frontend, 3 QA): code reviews, architectural decisions, task breakdown. Responsible for production reliability and performance: metrics, alerting, fault tolerance and response times.
 
         **Key Achievements:**
         - Designed the end-to-end deal process
+        - Integrations with multiple partner banks
+        - Automated reconciliations with banks and payment systems
+        - Refund processes and financial accounting for deals
+        - Support admin panel: product management, customer and deal reports
         - Migrated data from MongoDB to PostgreSQL
         - Implemented SAGA patterns (Kafka choreography for deposit auto-renewal)
-        - Bank integrations
         - Kafka implementation for event-driven architecture
         - Monitoring setup: Prometheus, Jaeger, Kibana
         - Load testing with k6
         - Reliable hybrid cache manager with Circuit Breaker
+
+        **Tech Stack:**
+        - C# .NET Core microservices
+        - PostgreSQL, MongoDB
+        - Kafka
+        - Kubernetes, ArgoCD
+        - Prometheus, Grafana, Jaeger, Kibana
 
     - name: "Project: CASCO (Auto Insurance)"
       description: |

@@ -831,49 +831,6 @@ body {
   }
 }
 
-.stackoverflow-flair {
-  margin: 1.5rem 0;
-  text-align: left;
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  [data-theme="dark"] & img {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
-  }
-}
-
-
-.codewars-flair {
-  margin: 1.5rem 0;
-  text-align: left;
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  [data-theme="dark"] & img {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
-  }
-}
-
 .download-pdf {
   display: flex;
   align-items: center;
@@ -894,4 +851,122 @@ body {
 .download-pdf svg {
   width: 16px;
   height: 16px;
+}
+/* ==================== */
+/* Печать / PDF         */
+/* ==================== */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 10mm;
+  }
+
+  :root,
+  :root[data-theme="dark"] {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --text-secondary: #666666;
+    --card-bg: #f7f7f7;
+    --accent-color: #3a86ff;
+    --border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  html,
+  body {
+    background: #fff;
+  }
+
+  body {
+    padding-top: 0;
+    font-size: 10.5pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .site-header {
+    position: static;
+    padding: 0 0 0.75rem;
+    background: none;
+    backdrop-filter: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .header-actions,
+  .site-footer {
+    display: none;
+  }
+
+  .resume-container {
+    grid-template-columns: 30% 1fr;
+    gap: 1.5rem;
+    max-width: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+
+  .resume-sidebar {
+    position: static;
+  }
+
+  .profile-photo {
+    order: 0;
+    max-width: 160px;
+    margin: 0;
+
+    img {
+      box-shadow: none;
+    }
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+  }
+
+  .tech-card {
+    animation: none;
+    opacity: 1;
+    padding: 0.4rem 0.2rem;
+    box-shadow: none;
+  }
+
+  .tech-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.25rem;
+  }
+
+  .tech-name {
+    font-size: 0.7rem;
+  }
+
+  .experience-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  .section-title,
+  .project-title,
+  .position-title {
+    break-after: avoid;
+  }
+
+  .experience-description {
+    line-height: 1.4;
+  }
+
+  .project-details ul {
+    margin: 0.25rem 0 0.5rem;
+
+    li {
+      margin-bottom: 0.15rem;
+    }
+  }
+
+  li,
+  .education-item {
+    break-inside: avoid;
+  }
 }
