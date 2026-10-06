@@ -133,6 +133,14 @@ body {
       color: #0088cc; /* Цвет Telegram */
     }
   }
+
+  &.linkedin {
+    color: var(--accent-color);
+
+    &:hover {
+      color: #0a66c2; /* Цвет LinkedIn */
+    }
+  }
 }
 
 .header-actions {
