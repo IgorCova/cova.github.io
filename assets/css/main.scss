@@ -855,6 +855,13 @@ body {
 /* ==================== */
 /* Печать / PDF         */
 /* ==================== */
+.skills-text {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
 @media print {
   @page {
     size: A4;

@@ -1,17 +1,4 @@
 text: |
-    Hi! I'm a backend Software Engineer with 13 years of commercial experience. My main language is C# / .NET. I specialize in high-load, fault-tolerant systems in fintech: payments, banking products and insurance.
-    
-    **My core stack:** C#, .NET, PostgreSQL, Kafka, RabbitMQ, Redis, Kubernetes. I have also built production services in Go and Node.js (TypeScript).
-    
-    **Deep expertise in:**
-    - Financial processes: reconciliations with banks and payment systems, refunds, financial accounting
-    - Payment systems and banking protocols integration
-    - Legacy systems: analysis, refactoring and migrations (PHP → .NET, MongoDB → PostgreSQL)
-    - Event-driven system design and microservices architecture
-    - Complex business process implementation using SAGA patterns
-    - Relational database design and optimization
-    - CI/CD, Kubernetes and observability (Prometheus, Grafana, Jaeger)
-    
-    As a tech lead, I do code reviews and take part in the team's architectural decisions.
-    I strike a balance between quality and development velocity.
-    I actively use design patterns, SOLID principles and AI-powered coding assistants in my workflow.
+    Backend engineer with 13 years of commercial experience in C# / .NET, specializing in high-load, fault-tolerant fintech systems: payments, banking products and insurance. For the last 4 years I have been the tech lead of a 10-person cross-functional team at Sravni.ru, where I redesigned the bank deposits platform and migrated it from PHP to .NET microservices.
+
+    My strengths are financial processes (reconciliations with banks and payment systems, refunds, accounting), bank and payment system integrations, legacy migrations, and event-driven architecture on Kafka with SAGA patterns. Core stack: C#, .NET, PostgreSQL, Kafka, RabbitMQ, MassTransit, Redis, Kubernetes; I have also built production services in Go and Node.js (TypeScript).

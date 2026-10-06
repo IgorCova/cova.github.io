@@ -4,47 +4,28 @@
   projects:
     - name: "Project: Bank Deposits Platform"
       description: |
-        Completely redesigned the full-deal system architecture, migrating it from PHP to .NET, which improved stability and scalability. Tech lead of a 10-person cross-functional team (4 backend, 3 frontend, 3 QA): code reviews, architectural decisions, task breakdown. Responsible for production reliability and performance: metrics, alerting, fault tolerance and response times.
+        Tech lead of a 10-person cross-functional team (4 backend, 3 frontend, 3 QA) on the end-to-end deposit deal platform of a financial marketplace.
 
-        **Key Achievements:**
-        - Designed the end-to-end deal process
-        - Integrations with multiple partner banks
-        - Automated reconciliations with banks and payment systems
-        - Refund processes and financial accounting for deals
-        - Support admin panel: product management, customer and deal reports
+        - Redesigned the end-to-end deal system architecture and migrated it from PHP to .NET microservices, improving the platform's stability and extensibility
+        - Designed the end-to-end deal process and the integrations with partner banks
+        - Automated reconciliations with banks and payment systems, refund processes and financial accounting for deals
+        - Introduced Kafka as the backbone of the event-driven model and implemented deposit auto-renewal with SAGA choreography
         - Migrated data from MongoDB to PostgreSQL
-        - Implemented SAGA patterns (Kafka choreography for deposit auto-renewal)
-        - Kafka implementation for event-driven architecture
-        - Monitoring setup: Prometheus, Jaeger, Kibana
-        - Load testing with k6
-        - Reliable hybrid cache manager with Circuit Breaker
+        - Built a hybrid cache manager with a Circuit Breaker for service fault tolerance
+        - Set up observability: metrics and alerting in Prometheus and Grafana, tracing in Jaeger, logs in Kibana; ran load tests with k6
+        - Built a support admin panel: product management, customer and deal reports
+        - Run code reviews, make architectural decisions and break down tasks; own production reliability and response times
 
-        **Tech Stack:**
-        - C# .NET Core microservices
-        - PostgreSQL, MongoDB
-        - Kafka
-        - Kubernetes, ArgoCD
-        - Prometheus, Grafana, Jaeger, Kibana
+        **Stack:** C# / .NET, PostgreSQL, MongoDB, Kafka, MassTransit, Kubernetes, ArgoCD, Prometheus, Grafana, Jaeger, Kibana
 
     - name: "Project: CASCO (Auto Insurance)"
       description: |
-        **Developed end-to-end insurance service from scratch:**
-        - Integration with insurance companies
-        - Data processing optimization
-        - Error monitoring system implementation
+        - Built the end-to-end CASCO insurance deal service from scratch
+        - Integrated partner insurance companies
+        - Optimized data processing
+        - Implemented an error monitoring system
 
-        **Tech Stack:**
-        - C# .NET Core microservices
-        - PostgreSQL and ClickHouse databases
-        - RabbitMQ and Kafka message brokers
-        - XUnit for unit testing
-        - Entity Framework
-        - Redis for in-memory caching
-        - ArgoCD for Kubernetes CI/CD
-        - Grafana monitoring and alerting
-        - Prometheus metrics
-        - OpenSearch/Kibana logging
-        - Jaeger request tracing
+        **Stack:** C# / .NET, Entity Framework, PostgreSQL, ClickHouse, RabbitMQ, Kafka, MassTransit, Redis, xUnit, Kubernetes, ArgoCD, Prometheus, Grafana, OpenSearch/Kibana, Jaeger
 
 - company: "VK (VKontakte)"
   position: "Senior Software Engineer"
@@ -52,24 +33,14 @@
   projects:
     - name: "Project: loyalty.rkeeper.ru"
       description: |
-        Developed reporting system based on r-keeper and DeliveryClub data.
-        Built microservices for data collection, processing, enrichment, aggregation and reporting.
+        Reporting system based on r-keeper and DeliveryClub data.
 
-        **Key Achievements:**
-        - Led development of integration test framework for web services
-        - Led development of notification microservices using SAGA choreography
+        - Built microservices for data collection, enrichment and aggregation and for building data marts for the reporting system
+        - Wrote complex analytical queries for reports
+        - Led development of an integration test framework for backend web services
+        - Led development of user notification microservices based on SAGA choreography
 
-        **Tech Stack:**
-        - C# .NET Core microservices
-        - MS SQL Server, PostgreSQL and ClickHouse databases
-        - RabbitMQ message broker
-        - GraphQL APIs
-        - NUnit and XUnit for unit testing
-        - Entity Framework
-        - Redis for in-memory caching
-        - TeamCity and Octopus for CI/CD
-        - Rancher for Kubernetes cluster management
-        - Grafana with Graylog for data visualization and monitoring
+        **Stack:** C# / .NET, Entity Framework, MS SQL Server, PostgreSQL, ClickHouse, RabbitMQ, MassTransit, Redis, GraphQL, NUnit, xUnit, TeamCity, Octopus, Kubernetes (Rancher), Grafana, Graylog
 
 - company: "Latoken"
   position: "Lead Developer"
@@ -77,19 +48,11 @@
   projects:
     - name: "Project: Crypto Integration"
       description: |
-        Developed web services for cryptocurrency exchange. Integrated various blockchains like ETH and BTC into exchange infrastructure.
+        Web services for a cryptocurrency exchange: integrating ETH- and BTC-like blockchains into the exchange infrastructure.
 
-        **Key Achievements:**
-        - Spearheaded development of unified platform for blockchain integration (ETH, BTC etc.), reducing integration time by 10x while minimizing codebase and errors.
+        - Led development of a unified blockchain integration platform, making new blockchain integrations 10x faster while reducing code size and the number of errors
 
-        **Tech Stack:**
-        - C# .NET Core and Node.JS (TypeScript) microservices
-        - PostgreSQL and ClickHouse databases
-        - Kafka message broker
-        - gRPC APIs
-        - TeamCity CI/CD
-        - Rancher for Kubernetes management
-        - ELK Stack with Grafana for data visualization
+        **Stack:** C# / .NET, Node.js (TypeScript), PostgreSQL, ClickHouse, Kafka, gRPC, TeamCity, Kubernetes (Rancher), ELK, Grafana
 
 - company: "RFI BANK"
   position: "Lead Developer"
@@ -97,19 +60,13 @@
   projects:
     - name: "Project: Payment Processing"
       description: |
-        Developed and maintained payment processing center. Managed projects using MasterCard and Mir payment systems.
+        Development and maintenance of the bank's payment processing center; projects with the MasterCard and Mir payment systems.
 
-        **Key Achievements:**
-        - Developed OpenAPI for banking processing integration
-        - Configured GitLab CI/CD for K8s with health/liveness checks
-        - Created Docker images for .NET Core APIs
+        - Developed an OpenAPI for integration with the bank's processing
+        - Configured GitLab CI/CD for Kubernetes deployments with health, liveness and readiness checks
+        - Containerized .NET Core APIs with Docker
 
-        **Tech Stack:**
-        - C# .NET Core microservices
-        - C-based payment processing
-        - Kafka message broker
-        - GitLab CI/CD and TeamCity
-        - Oracle PL/SQL and PostgreSQL databases
+        **Stack:** C# / .NET Core, C, Kafka, Oracle PL/SQL, PostgreSQL, GitLab CI/CD, TeamCity, Docker, Kubernetes
 
 - company: "Major-Auto"
   position: "Software Developer"
@@ -117,19 +74,10 @@
   projects:
     - name: "Project: Major-Auto CRM"
       description: |
-        Developed internal corporate information system. Started as intern, grew to mid-level developer.
+        Internal corporate information system of an automotive holding. Grew from intern to mid-level developer.
 
-        **SQL Server & T-SQL Development:**
-        - Created and optimized stored procedures, triggers and functions
-        - Database design (tables, views, keys, indexes) and normalization
-        - Query execution plan analysis and optimization
-        - SQL Server CLR integration, CLR objects implementation
+        - Designed database structures and optimized T-SQL stored procedures and queries using execution plans; implemented CLR objects
+        - Developed a C# WCF service integrating the internal system with external APIs
+        - Built business modules and user forms in Delphi
 
-        **C# and WCF Development:**
-        - Developed WCF service for internal system with external API integration
-        - Extended functionality by adding new classes and methods
-
-        **Delphi and MS SQL Development:**
-        - Maintained and enhanced corporate information system
-        - Developed business modules and user forms
-        - Created database objects for data management
+        **Stack:** C#, WCF, MS SQL Server, T-SQL, Delphi

@@ -1,10 +1,10 @@
 <section class="about">
     <div class="profile-photo">
-        <img src="{{ '/assets/images/photo.jpg' | relative_url }}"  width="200px" alt="Фото {{ site.author.name }}" loading="lazy">
+        <img src="{{ '/assets/images/photo.jpg' | relative_url }}"  width="200px" alt="{{ site.data[page.lang].common.name }}" loading="lazy">
     </div>
     <h3>{{ site.data[page.lang].common.name }}</h3>
     <p>{{ site.data[page.lang].common.work_schedule }} | {{ site.data[page.lang].common.employment_type }}</p>
     <!-- Контакты -->
     {% include contacts.html %}
-    <p>🇺🇸 English - B2</p>
+    <p>{{ site.data[page.lang].common.english_level }}</p>
 </section>
